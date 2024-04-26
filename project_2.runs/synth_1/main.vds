@@ -1,0 +1,300 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Apr 25 23:48:45 2024
+# Process ID: 13044
+# Current directory: C:/Users/circuitbuiler/project_2/project_2.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/circuitbuiler/project_2/project_2.runs/synth_1/main.vds
+# Journal file: C:/Users/circuitbuiler/project_2/project_2.runs/synth_1\vivado.jou
+# Running On: DESKTOP-6SDCLS4, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 12184 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/circuitbuiler/project_2/project_2.srcs/utils_1/imports/synth_1/main.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/circuitbuiler/project_2/project_2.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13140
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1394.555 ; gain = 440.242
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:23]
+WARNING: [Synth 8-11065] parameter 's_RX_START_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:24]
+WARNING: [Synth 8-11065] parameter 's_RX_DATA_BITS' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:25]
+WARNING: [Synth 8-11065] parameter 's_RX_STOP_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:26]
+WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:27]
+WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:25]
+WARNING: [Synth 8-11065] parameter 's_TX_START_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:26]
+WARNING: [Synth 8-11065] parameter 's_TX_DATA_BITS' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:27]
+WARNING: [Synth 8-11065] parameter 's_TX_STOP_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:28]
+WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:29]
+WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:25]
+WARNING: [Synth 8-11065] parameter 's_TX_START_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:26]
+WARNING: [Synth 8-11065] parameter 's_TX_DATA_BITS' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:27]
+WARNING: [Synth 8-11065] parameter 's_TX_STOP_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:28]
+WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:29]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'uart_tx' [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:146]
+INFO: [Synth 8-9937] previous definition of design element 'uart_tx' is here [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:146]
+WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:23]
+WARNING: [Synth 8-11065] parameter 's_RX_START_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:24]
+WARNING: [Synth 8-11065] parameter 's_RX_DATA_BITS' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:25]
+WARNING: [Synth 8-11065] parameter 's_RX_STOP_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:26]
+WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:27]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'uart_rx' [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:149]
+INFO: [Synth 8-9937] previous definition of design element 'uart_rx' is here [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:149]
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/main.v:25]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:14]
+	Parameter CLKS_PER_BIT bound to: 1085 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:14]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:14]
+	Parameter CLKS_PER_BIT bound to: 1085 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:14]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/main.v:60]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/main.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/main.v:25]
+WARNING: [Synth 8-6014] Unused sequential element r_Clock_Count_reg was removed.  [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:56]
+WARNING: [Synth 8-6014] Unused sequential element r_Bit_Index_reg was removed.  [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_rx.v:57]
+WARNING: [Synth 8-6014] Unused sequential element r_Clock_Count_reg was removed.  [C:/Users/circuitbuiler/project_2/project_2.srcs/sources_1/new/uart_tx.v:46]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1501.746 ; gain = 547.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1501.746 ; gain = 547.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1501.746 ; gain = 547.434
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1501.746 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'je[0]'. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[1]'. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[2]'. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[3]'. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[4]'. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'je[7]'. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/circuitbuiler/Downloads/digilent-xdc-master/digilent-xdc-master/Zybo-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1556.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1556.168 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_IDLE |                                0 |                              000
+          s_RX_START_BIT |                                1 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_IDLE |                                0 |                              000
+          s_TX_START_BIT |                                1 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 3     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   6 Input    8 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 11    
+	   6 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (UART_RX_INST/FSM_sequential_r_SM_Main_reg) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |     6|
+|4     |LUT3 |     5|
+|5     |LUT4 |     4|
+|6     |LUT5 |     2|
+|7     |LUT6 |     8|
+|8     |FDRE |    23|
+|9     |IBUF |     1|
+|10    |OBUF |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1556.168 ; gain = 601.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1556.168 ; gain = 547.434
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1556.168 ; gain = 601.855
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1556.168 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1556.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: bef773a9
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 32 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1556.168 ; gain = 994.883
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1556.168 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/circuitbuiler/project_2/project_2.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 25 23:49:20 2024...
